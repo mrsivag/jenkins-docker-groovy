@@ -3,7 +3,7 @@ folder('roboshop/CIJOBS') {
     description('roboshop CI Jobs Project Folder')
 }
 
-pipelineJob("robishop/CIJOB/Sample"){
+pipelineJob("robishop/CIJOBS/Sample"){
 	description('Sample')
 	definition {
 	  cpsScm{

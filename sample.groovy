@@ -6,7 +6,6 @@ pipelineJob("Sample"){
 		 git{
 		  remote{
 		   url("https://github.com/mrsivag/jenkins-docker-groovy")
-		   credentials("GitUserPass")
 		  }
 		  branch("*/master")
 		 }

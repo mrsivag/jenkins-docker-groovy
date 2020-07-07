@@ -18,11 +18,7 @@ pipeipeline agent any{
         }
 
     }
-    stage("My Second Stage"){
-        steps{
-            print("URL2 "+URL2)
-        }
-     }
+
 
   }
 

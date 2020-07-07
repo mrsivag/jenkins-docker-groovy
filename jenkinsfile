@@ -1,14 +1,10 @@
-pipeline
- agent any
-   stages{
-    stage("My First Stage"){
-        steps{
-            sh '''
-             echo Hello from first stage
-             ls
-             echo bye from first stage
-        '''
-            print "Hello from Groovy"
+pipeline {
+    agent any
+    stages {
+        stage('build') {
+            steps {
+                echo "Hello World!"
+            }
         }
     }
-  }
+}

@@ -1,15 +1,14 @@
- pipeline {
-    agent any
-    stages {
-        stage('My First Stage') {
-            steps {
-                sh '''
-                     echo Hello from First Stage
-                     ls
-                     echo Bye from First Stage
-                 '''
-                 print "Hello from Groovy"
-            }
+pipeline
+ agent any
+   stages{
+    stage('My First Stage'){
+        steps{
+            sh '''
+             echo Hello from first stage
+             ls
+             echo bye from first stage
+        '''
+            print "Hello from Groovy"
         }
     }
-}
+  }

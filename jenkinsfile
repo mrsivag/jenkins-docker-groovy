@@ -1,4 +1,4 @@
-pipeipeline agent any{
+pipeipeline
  agent any
    stages{
     stage("My First Stage"){

@@ -1,4 +1,14 @@
-pipelineJob("Sample"){
+folder('roboshop') {
+    displayName('roboshop')
+    description('roboshop Project Folder')
+}
+
+folder('roboshop/CIJOBS') {
+    displayName('roboshop/CIJOBS')
+    description('roboshop CI Jobs Project Folder')
+}
+
+pipelineJob("roboshop/CIJOBS/Sample"){
 	description('Sample')
 	definition {
 	  cpsScm{
@@ -6,7 +16,6 @@ pipelineJob("Sample"){
 		 git{
 		  remote{
 		   url("https://github.com/mrsivag/jenkins-docker-groovy")
-		   credentials("GitUserPass")
 		  }
 		  branch("*/master")
 		 }
@@ -15,4 +24,3 @@ pipelineJob("Sample"){
 	  }
 	}
 }
-//sample code heress

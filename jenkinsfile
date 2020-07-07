@@ -1,9 +1,13 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('My First Stage') {
             steps {
-                echo "Hello World!"
+                sh '''
+                     echo Hello from First Stage
+                     echo Bye from First Stage
+                 '''
+                 print "Hello from Groovy"
             }
         }
     }

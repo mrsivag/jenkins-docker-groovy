@@ -1,12 +1,12 @@
 pipeline
  agent any
    stages{
-    stage('My First Stage'){
+    stage("My First Stage"){
         steps{
             sh '''
-             echo Hello from first stage
-             ls
-             echo bye from first stage
+                echo Hello from first stage
+                ls
+                 echo bye from first stage
         '''
             print "Hello from Groovy"
         }

@@ -1,6 +1,7 @@
 def PROJECT_NAME = 'roboshop'
 def CI_PATH = 'CIJOBS'
 def SAMPLE = 'Sample'
+def GIT_PREFIX = 'https://github.com/mrsivag/'
 folder(PROJECT_NAME) {
     displayName(PROJECT_NAME)
     description(PROJECT_NAME +' Project Folder')
@@ -18,7 +19,7 @@ pipelineJob(PROJECT_NAME+'/'+CI_PATH+'/'+SAMPLE){
 	    scm{
 		 git{
 		  remote{
-		   url("https://github.com/mrsivag/jenkins-docker-groovy")
+		   url(GIT_PREFIX+"jenkins-docker-groovy")
 		  }
 		  branch("*/master")
 		 }

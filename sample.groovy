@@ -1,5 +1,5 @@
 def PROJECT_NAME = 'roboshop'
-def CI_PATH = CIJOBS
+def CI_PATH = 'CIJOBS'
 def SAMPLE = 'Sample'
 folder(PROJECT_NAME) {
     displayName(PROJECT_NAME)
